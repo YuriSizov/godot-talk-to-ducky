@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Body" transform="matrix(1.01043,0,0,1,-3.6676,-5.06668)">
+        <path d="M72.05,25.333C124.874,9.652 123.766,77.852 123.766,77.852L118.752,116.281C118.752,116.281 112.591,140.492 72.05,140.4C37.84,140.322 22.008,144.089 9.705,115.348C6.282,107.351 3.569,83.933 10.205,79.325C14.468,76.364 38.806,84.955 40.908,80.467C53.627,53.296 44.651,33.467 72.05,25.333Z" style="fill:rgb(248,190,23);"/>
+    </g>
+    <g id="Beak" transform="matrix(1.01043,0,0,1,-3.6676,-5.06668)">
+        <path d="M118.752,116.281C112.654,120.22 121.393,72.21 124.03,76.919C136.37,98.949 153.483,96.902 149.245,106.067C148.077,108.592 121.665,114.4 118.752,116.281Z" style="fill:rgb(226,72,31);"/>
+    </g>
+    <g id="Eye" transform="matrix(1.23529,0,0,1,-8.44705,-6.66668)">
+        <ellipse cx="82.933" cy="58.467" rx="10.2" ry="12.867"/>
+        <clipPath id="_clip1">
+            <ellipse cx="82.933" cy="58.467" rx="10.2" ry="12.867"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g id="Iris" transform="matrix(0.809524,0,0,1,19.4667,-2.13333)">
+                <ellipse cx="82.467" cy="58.067" rx="3.067" ry="4.2" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>

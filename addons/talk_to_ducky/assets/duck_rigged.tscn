@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/talk_to_ducky/assets/duck_rigged.glb" type="PackedScene" id=1]
+
+[node name="duck_rigged" instance=ExtResource( 1 )]

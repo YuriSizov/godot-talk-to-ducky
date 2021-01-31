@@ -1,34 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://addons/talk_to_ducky/assets/duck.tscn" type="PackedScene" id=1]
 [ext_resource path="res://addons/talk_to_ducky/DuckyScene.gd" type="Script" id=2]
-[ext_resource path="res://addons/talk_to_ducky/assets/duck_rigged.glb" type="PackedScene" id=3]
-
-[sub_resource type="Animation" id=1]
-resource_name = "idle"
-length = 2.0
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Ducky:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5, 1, 1.5, 2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 15, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, -15, 0 ), Vector3( 0, 0, 0 ) ]
-}
+[ext_resource path="res://addons/talk_to_ducky/assets/duck_rigged.tscn" type="PackedScene" id=3]
 
 [node name="DuckyScene" type="Node"]
 script = ExtResource( 2 )
 
-[node name="duck_rigged" parent="." instance=ExtResource( 3 )]
-visible = false
+[node name="Ducky" parent="." instance=ExtResource( 3 )]
 
-[node name="Ducky" parent="." instance=ExtResource( 1 )]
-transform = Transform( 0.998137, 0, -0.0610144, 0, 1, 0, 0.0610144, 0, 0.998137, 0, 0, 0 )
+[node name="DuckyStatic" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.999879, 0, -0.0155547, 0, 1, 0, 0.0155547, 0, 0.999879, 0, 0, 0 )
+visible = false
 
 [node name="Sunlight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.733955, 0.679198, 0, -0.679198, 0.733955, 3.53573, 9.63185, -0.783597 )
@@ -39,6 +22,3 @@ light_energy = 0.68
 transform = Transform( 1, 0, 0, 0, 0.9902, 0.139657, 0, -0.139657, 0.9902, 0, 0.302614, 1.24081 )
 current = true
 fov = 17.9053
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/idle = SubResource( 1 )
