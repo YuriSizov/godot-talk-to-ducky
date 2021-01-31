@@ -4,5 +4,12 @@
 
 Talk to Ducky now!
 
+![image](/images/ducky_face.png)
+
 ## Installation
 Clone this repository or download it as ZIP. You only need to put `addons/talk_to_ducky` folder inside your project folder. ZIP already has only necessary files.
+
+## License
+This project is provided under [MIT License](LICENSE).
+
+Original model by [Arnklit](https://github.com/Arnklit).
