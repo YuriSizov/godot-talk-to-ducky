@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://addons/talk_to_ducky/DuckyScene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/talk_to_ducky/assets/duck_environment.tres" type="Environment" id=2]
+
+[sub_resource type="World" id=1]
+environment = ExtResource( 2 )
 
 [node name="DuckyDock" type="MarginContainer"]
 anchor_right = 1.0
@@ -22,8 +26,10 @@ stretch = true
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
 size = Vector2( 1024, 600 )
 size_override_stretch = true
+world = SubResource( 1 )
 transparent_bg = true
 handle_input_locally = false
+msaa = 3
 hdr = false
 render_target_update_mode = 3
 
