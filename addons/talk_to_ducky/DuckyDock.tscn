@@ -26,6 +26,7 @@ stretch = true
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
 size = Vector2( 1024, 600 )
 size_override_stretch = true
+own_world = true
 world = SubResource( 1 )
 transparent_bg = true
 handle_input_locally = false
